@@ -15,8 +15,8 @@ $plugin_name = 'rs_tooltip';
 $page_heading = 'Resource tooltips'; // Replace me
 $page_intro = '';
 $page_def = array();
-
-$page_def[] = config_add_multi_ftype_select('tooltip_display_fields', 'Fields to display in resource tooltip');
+$page_def[] = config_add_boolean_select('tooltip_display_ID', $lang['tooltip_display_ID']);
+$page_def[] = config_add_multi_ftype_select('tooltip_display_fields', $lang['tooltip_display_fields']);
 
 # Build the $page_def array of descriptions of each configuration variable the plugin uses.
 # Each element of $page_def describes one configuration variable. Each description is
