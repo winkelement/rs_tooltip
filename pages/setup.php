@@ -17,6 +17,7 @@ $page_intro = '';
 $page_def = array();
 $page_def[] = config_add_boolean_select('tooltip_display_ID', $lang['tooltip_display_ID']);
 $page_def[] = config_add_multi_ftype_select('tooltip_display_fields', $lang['tooltip_display_fields']);
+$page_def[] = config_add_single_select('tooltip_display_theme', $lang['tooltip_display_theme'],$lang['tooltip_display_theme_choices'],false);
 
 # Build the $page_def array of descriptions of each configuration variable the plugin uses.
 # Each element of $page_def describes one configuration variable. Each description is

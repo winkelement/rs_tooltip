@@ -2,13 +2,14 @@
 
 function HookRs_tooltipSearchEndofsearchpage()
     {
-    global $baseurl;
+    global $baseurl,$tooltip_display_theme;
     ?>
     <script>
     jQuery(document).ready(function() {
         jQuery(".ResourcePanelShell").find('img').tooltipster({
             animation: 'fade',
             updateAnimation: null,
+            theme: 'tooltipster-<?php echo $tooltip_display_theme; ?>',
             contentAsHTML: true,
             content: 'Loading...',
             functionBefore: function(instance, helper) {
