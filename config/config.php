@@ -6,4 +6,7 @@
  * which is invoked by choosing Team Centre > Manage Plugins and then clicking on Options for the
  * rs_tooltip plugin once it has been activated.
  */
-$tooltip_display_fields = array('8', '12' );
+$tooltip_display_ID = true;
+$tooltip_display_fields = array('8','12');
+$tooltip_display_theme = "";
+
