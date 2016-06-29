@@ -7,18 +7,24 @@ $ID = filter_input(INPUT_GET, 'ref', FILTER_VALIDATE_INT);
 
 global $tooltip_display_fields,$tooltip_display_ID;
 
-if ($tooltip_display_ID) {
-$idinsert ="<th>ID: " . $ID . "</th>";
-} else {
-$idinsert ='';
-}
+if ($tooltip_display_ID)
+    {
+    $idinsert = "<th>ID: " . $ID . "</th>";
+    }
+else
+    {
+    $idinsert = '';
+    }
 
 $content = '';
-$content .= '<table style="text-align: left">'.$idinsert;
+$content .= '<table style="text-align: left">' . $idinsert;
 foreach ($tooltip_display_fields as $tfield)
     {
     $data = ltrim(trim(i18n_get_translated(get_data_by_field ($ID, $tfield))),',');
-    $content .= '<tr><td>' . $data . '</tr></td>';
+    if ($data != '')
+        {
+        $content .= '<tr><td>' . $data . '</tr></td>';
+        }
     }
 $content .= '</table>';
 
