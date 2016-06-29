@@ -32,7 +32,7 @@ function HookRs_tooltipAllAdditionalheaderjs()
                     updateAnimation: null,
                     theme: 'tooltipster-<?php echo $tooltip_display_theme; ?>',
                     contentAsHTML: true,
-                    content: 'Loading...',
+                    content: '<i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>',
                     functionBefore: function(instance, helper)
                         {
                         var $origin = jQuery(helper.origin);
