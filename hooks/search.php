@@ -7,19 +7,19 @@ function HookRs_tooltipSearchEndofsearchpage()
     <script>
     jQuery(document).ready(function()
         {
-        jQuery(".ResourcePanelShell").find('img').tooltipster(
+        jQuery(".ResourcePanelShell, .ResourcePanelShellLarge, .ResourcePanelShellSmall").find('img').tooltipster(
             {
             animation: 'fade',
             updateAnimation: null,
             theme: 'tooltipster-<?php echo $tooltip_display_theme; ?>',
             contentAsHTML: true,
-            content: 'Loading...',
+            content: '<i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>',
             functionBefore: function(instance, helper)
                 {
                 var $origin = jQuery(helper.origin);
                 if ($origin.data('loaded') !== true)
                     {
-                    var ref = $origin.closest(".ResourcePanelShell").attr("id").replace("ResourceShell", "");
+                    var ref = $origin.closest(".ResourcePanelShell, .ResourcePanelShellLarge, .ResourcePanelShellSmall").attr("id").replace("ResourceShell", "");
                     jQuery.get('<?php echo $baseurl;?>/plugins/rs_tooltip/include/generate.php', {ref: ref}, function(data)
                         {
                         instance.content(data);
