@@ -10,3 +10,4 @@ $tooltip_display_ID = true;
 $tooltip_display_fields = array('8','12');
 $tooltip_display_theme = "";
 $tooltip_collection_show = true;
+$tooltip_maxwidth ="400";
