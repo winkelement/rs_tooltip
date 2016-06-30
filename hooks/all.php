@@ -19,7 +19,7 @@ function HookRs_tooltipAllAdditionalheaderjs()
 
     function HookRs_tooltipAllThumblistextra()
         {
-        global $baseurl,$tooltip_display_theme,$tooltip_collection_show;
+        global $baseurl,$tooltip_display_theme,$tooltip_collection_show,$tooltip_maxwidth;
         if ($tooltip_collection_show)
             {
             ?>
@@ -30,6 +30,7 @@ function HookRs_tooltipAllAdditionalheaderjs()
                     {
                     animation: 'fade',
                     updateAnimation: null,
+            		<?php if ($tooltip_maxwidth) { echo 'maxWidth: ' . $tooltip_maxwidth . ','; } ?>
                     theme: 'tooltipster-<?php echo $tooltip_display_theme; ?>',
                     contentAsHTML: true,
                     content: '<i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>',

@@ -2,7 +2,7 @@
 
 function HookRs_tooltipSearchEndofsearchpage()
     {
-    global $baseurl,$tooltip_display_theme;
+    global $baseurl,$tooltip_display_theme,$tooltip_maxwidth;
     ?>
     <script>
     jQuery(document).ready(function()
@@ -11,6 +11,7 @@ function HookRs_tooltipSearchEndofsearchpage()
             {
             animation: 'fade',
             updateAnimation: null,
+            <?php if ($tooltip_maxwidth) { echo 'maxWidth: ' . $tooltip_maxwidth . ','; } ?>
             theme: 'tooltipster-<?php echo $tooltip_display_theme; ?>',
             contentAsHTML: true,
             content: '<i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>',
