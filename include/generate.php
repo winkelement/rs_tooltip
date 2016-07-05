@@ -5,6 +5,11 @@ require_once "../../../include/general.php";
 
 $ID = filter_input(INPUT_GET, 'ref', FILTER_VALIDATE_INT);
 
+if (!$ID)
+    {
+    exit ('Error: No resource id provided or id not an valid integer.');
+    }
+
 global $tooltip_display_fields,$tooltip_display_ID;
 
 if ($tooltip_display_ID)
