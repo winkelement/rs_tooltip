@@ -7,7 +7,7 @@ function HookRs_tooltipSearchEndofsearchpage()
     <script>
     jQuery(document).ready(function()
         {
-        jQuery(".ResourcePanelShell, .ResourcePanelShellLarge, .ResourcePanelShellSmall").find('img').tooltipster(
+        jQuery(".ResourcePanel, .ImageStripLink").find('img').tooltipster(
             {
             animation: 'fade',
             updateAnimation: null,
@@ -20,7 +20,7 @@ function HookRs_tooltipSearchEndofsearchpage()
                 var $origin = jQuery(helper.origin);
                 if ($origin.data('loaded') !== true)
                     {
-                    var ref = $origin.closest(".ResourcePanelShell, .ResourcePanelShellLarge, .ResourcePanelShellSmall").attr("id").replace("ResourceShell", "");
+                    var ref = $origin.closest(".ResourcePanel, .ImageStripLink").attr("id").replace("ResourceShell", "").replace("ResourceStrip", "");
                     jQuery.get('<?php echo $baseurl;?>/plugins/rs_tooltip/include/generate.php', {ref: ref}, function(data)
                         {
                         instance.content(data);

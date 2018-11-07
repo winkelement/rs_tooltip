@@ -1,6 +1,6 @@
 name: rs_tooltip
 author: Robert Damrau
-version: 0.2
+version: 0.3
 desc: Display resource metadata in a tooltip when hovering thumbs.
 config_url: /plugins/rs_tooltip/pages/setup.php
 info_url: https://github.com/winkelement/rs_tooltip

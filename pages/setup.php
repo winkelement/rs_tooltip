@@ -6,7 +6,6 @@ include '../../../include/authenticate.php';
 if (!checkperm('a')) {
     exit($lang['error-permissiondenied']);
 }
-include '../../../include/general.php';
 
 # Specify the name of this plugin, the heading to display for the page and the
 # optional introductory text. Set $page_intro to "" for no intro text
