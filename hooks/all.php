@@ -33,7 +33,7 @@ function HookRs_tooltipAllThumblistextra()
         		<?php if ($tooltip_maxwidth) { echo 'maxWidth: ' . $tooltip_maxwidth . ','; } ?>
                 theme: 'tooltipster-<?php echo $tooltip_display_theme; ?>',
                 contentAsHTML: true,
-                content: '<i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>',
+                content: '<i class="fa fa-cog fa-spin fa-2x"></i>',
                 functionBefore: function(instance, helper)
                     {
                     var $origin = jQuery(helper.origin);

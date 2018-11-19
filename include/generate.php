@@ -28,7 +28,7 @@ foreach ($tooltip_display_fields as $tfield)
     if ($tooltip_show_fieldname) 
         {
         $fieldname_array = sql_query("select title from resource_type_field where ref = $tfield");
-        $fieldname = '<td>' . $fieldname_array[0]["title"] . ' : </td>';
+        $fieldname = '<td>' . lang_or_i18n_get_translated($fieldname_array[0]["title"],'fieldtitle-') . ':</td>';
         } 
     else 
         {
