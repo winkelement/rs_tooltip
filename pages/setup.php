@@ -15,6 +15,7 @@ $page_heading = 'Resource tooltips'; // Replace me
 $page_intro = '';
 $page_def = array();
 $page_def[] = config_add_multi_ftype_select('tooltip_display_fields', $lang['tooltip_display_fields']);
+$page_def[] = config_add_boolean_select('tooltip_show_fieldname', $lang['tooltip_show_fieldname']);
 $page_def[] = config_add_boolean_select('tooltip_display_ID', $lang['tooltip_display_ID']);
 $page_def[] = config_add_boolean_select('tooltip_collection_show', $lang['tooltip_collection_show']);
 $page_def[] = config_add_text_input('tooltip_maxwidth', $lang['tooltip_maxwidth']);
