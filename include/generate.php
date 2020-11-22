@@ -1,7 +1,7 @@
 <?php
-require_once "../../../include/db.php";
+
+include_once "../../../include/db.php";
 include_once "../../../include/authenticate.php";
-require_once "../../../include/general.php";
 
 $ID = filter_input(INPUT_GET, 'ref', FILTER_VALIDATE_INT);
 

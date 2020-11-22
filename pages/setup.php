@@ -11,7 +11,7 @@ if (!checkperm('a')) {
 # optional introductory text. Set $page_intro to "" for no intro text
 # Change to match your plugin.
 $plugin_name = 'rs_tooltip';
-$page_heading = 'Resource tooltips'; // Replace me
+$page_heading = 'Resource Tooltips'; // Replace me
 $page_intro = '';
 $page_def = array();
 $page_def[] = config_add_multi_ftype_select('tooltip_display_fields', $lang['tooltip_display_fields']);

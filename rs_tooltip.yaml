@@ -1,7 +1,9 @@
 name: rs_tooltip
-author: Robert Damrau
-version: 0.4
-desc: Display resource metadata in a tooltip when hovering thumbs.
+title: RS Tooltip
+author: Robert Lanzke
+version: 0.5
+desc: Display resource metadata in a tooltip when hovering thumbnail images.
+icon: fa fa-info-circle
 config_url: /plugins/rs_tooltip/pages/setup.php
 info_url: https://github.com/winkelement/rs_tooltip
 category: User Interface

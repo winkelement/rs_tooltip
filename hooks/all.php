@@ -1,5 +1,7 @@
 <?php
 
+if (strpos($_SERVER['REQUEST_URI'], "k=") == false) {
+
 function HookRs_tooltipAllAdditionalheaderjs()
     {
     global $baseurl,$tooltip_display_theme;
@@ -53,3 +55,4 @@ function HookRs_tooltipAllThumblistextra()
         <?php
         }
     }
+}
